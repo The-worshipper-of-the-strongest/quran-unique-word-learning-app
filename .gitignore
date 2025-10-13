@@ -1,2 +1,8 @@
+# Ignore all files starting with 'surah' inside 'data/' folder
+data/surah*
+
+# Ignore node_modules folder
 node_modules/
+
+# Ignore all .log files anywhere
 *.log
