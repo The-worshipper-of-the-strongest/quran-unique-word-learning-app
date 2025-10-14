@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { getSurahName } = require('../services/data/quranDataService');
-const { saveNoCounts, getRukuData, updateWords, resetRuku } = require('../services/state/quizStateService');
+const { getRukuData, updateWords, resetRuku } = require('../services/state/quizStateService');
+const { saveNoCounts } = require('../services/state/quizStateService');
 const { generateHtmlPage } = require('../utils/htmlGenerator');
 
 router.get('/:surahId/ruku/:rukuId/quiz', (req, res) => {
