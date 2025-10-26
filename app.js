@@ -13,7 +13,7 @@ app.use('/surah', surahRouter);
 app.use('/surah', rukuRouter); // Shares /surah prefix
 app.use('/surah', quizRouter); // Shares /surah prefix
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
